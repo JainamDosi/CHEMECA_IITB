@@ -1,10 +1,10 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const Comp = () => {
   return (
     <div>
         
-       <h1>HIII</h1> Comp
         
         
         </div>

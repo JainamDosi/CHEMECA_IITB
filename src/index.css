@@ -8,18 +8,15 @@
   font-weight: normal;
   font-style: normal;
 }
-@layer base {
-  html {
-    font-family: 'poppins','sans-serif';
-    color: bisque;
-    cursor: none;
 
-  }
 
-}
+
 body {
   background: rgb(39, 39, 39);
-  color: rgb(45, 67, 86);
-  cursor: none;
+  w:100vw;
+  h:100vh;
+  color: rgb(254, 250, 244);
+  
+  font-family: "Space Grotesk";
   
 }

@@ -13,6 +13,6 @@ export default {
       'body': ['"Open Sans"'],
     }
   },
-  plugins: [],
+  plugins: [require('@codaworks/react-glow/tailwind')],
 }
 

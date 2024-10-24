@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import 'ldrs/jellyTriangle';
 
-const CustomCursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+const CustomCursor = (event) => {
+  const [position, setPosition] = useState({ x:event.clientX , y: event.clientY });
 
   useEffect(() => {
     const handleMouseMove = (event) => {
@@ -20,6 +20,7 @@ const CustomCursor = () => {
     position: 'absolute',
     left: `${position.x}px`,
     top: `${position.y}px`,
+    zIndex:50,
     pointerEvents: 'none', // Make sure the cursor doesn't block interactions
     transform: 'translate(-50%, -50%)', // Center the cursor on the mouse pointer
   };
