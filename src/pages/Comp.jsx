@@ -5,7 +5,7 @@ const Comp = () => {
   return (
     <div>
         
-        
+        <Header/>
         
         </div>
   )

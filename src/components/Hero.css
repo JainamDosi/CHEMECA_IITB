@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: 'DM-Sans-regular';
+    src: url('DM-Sans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  
+
 
 .MAINDIV{
     background-color: black;
@@ -15,4 +24,5 @@
     align-items: center;
     flex-direction: row;
     gap: 15rem;
+    font-family: 'Space Grotesk';
 }

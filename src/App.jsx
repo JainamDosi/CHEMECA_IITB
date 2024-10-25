@@ -8,7 +8,7 @@ import Comp from './pages/Comp'
 import Sub from './pages/Sub'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
-import { GlowCapture, Glow } from '@codaworks/react-glow';
+
 
 //  CHEMECA 
 
@@ -16,13 +16,11 @@ const App = () => {
   
   return (
     <>
-    <Header/>
+    
     {/* <CustomCursor/> */}
     
-
       <Routes>
       <Route path='/' element={<Home />} />
-       
         <Route path='/Home' element={<Home />} />
         <Route path='/Comp' element={<Comp />} />
         <Route path='/Team' element={<Team />} />

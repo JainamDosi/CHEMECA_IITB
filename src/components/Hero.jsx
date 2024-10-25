@@ -24,11 +24,7 @@ export const Hero = () => {
           { width: '50%', opacity: 1, duration: 2 },1
         );
 
-        tl.from("#SVGRepo_bgCarrier", {
-          drawSVG: "100%", // You can also use "100%" or specific ranges like "0% 100%" for more control
-          duration: 2,
-          delay: 1,
-        });
+        
         
       });
 

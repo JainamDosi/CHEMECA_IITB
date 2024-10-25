@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 .warp {
     width: 100%;
-
-    background-color: rgba(113, 113, 113, 0.1); /* Semi-transparent white */
-    backdrop-filter: blur(50px); /* Adjust blur level as needed */
+    background-color: rgba(78, 78, 78, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(80px); /* Adjust blur level as needed */
     -webkit-backdrop-filter: blur(50px); /* Safari support */
     border-radius: 10px; /* Optional: gives it a rounded appearance */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
@@ -15,6 +18,7 @@
     align-self: center;
     display: flex;
     top: 0;
+    z-index: 80;
   }
 
 .main{

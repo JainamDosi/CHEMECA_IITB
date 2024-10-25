@@ -5,7 +5,7 @@ import Header from '../components/Header'
 const Sub = () => {
   return (
     <div>
-      
+       <Header/>
       </div>
   )
 }

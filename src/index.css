@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'DM-Sans-regular';
-  src: url('DM-Sans-regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 
@@ -17,6 +11,6 @@ body {
   h:100vh;
   color: rgb(254, 250, 244);
   
-  font-family: "Space Grotesk";
+  font-family: "poppins";
   
 }
