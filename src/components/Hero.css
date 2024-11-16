@@ -17,12 +17,29 @@
     align-items: center;
     justify-content: space-between;
 }
+.w-34{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
 
 .wrap2{
-
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 15rem;
+    margin: 0;
+    display: flex;           /* Use flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  
     font-family: 'Space Grotesk';
+    position: absolute;
+    top:0;
+    width: 100vw;
+    background-image: url('src/assets/BG.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+
 }

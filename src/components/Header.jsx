@@ -5,12 +5,12 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div className='warp z-10 h-28'>
+    <div className='warp  h-28'>
       <div className='wrapper flex items-center justify-between mt-0 w-full'>
-        <div className='flex items-center ml-10'>
+        <nav className='flex items-center ml-10'>
           <img src={icon} alt="icon" className='w-24 h-24 mr-5' />
-          <Link to='/'><div className='main text-4xl tracking-wide text-slate-100'>ChemEca</div></Link>
-        </div>
+          <Link to='/'><div className='text-4xl tracking-wide text-slate-100'>ChemEca</div></Link>
+        </nav>
         <nav className='flex space-x-8 mr-14'>
           <Link to="/Home" className='MY text-gray-500 text-xl'>Home</Link>
           <Link to="/Sub" className='MY text-gray-500 text-xl'>Subdivision</Link>
