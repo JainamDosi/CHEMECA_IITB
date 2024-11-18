@@ -23,7 +23,7 @@ const Home = () => {
 
   useEffect(() => {
     gsap.to('.MYVDO', {
-      width: '95%',
+      width: '97%',
       scrollTrigger: {
         trigger: '.MYVDO',
         markers: true,
@@ -41,10 +41,22 @@ const Home = () => {
       {/* Hero component takes full height of the viewport */}
       <Hero  />  {/* Added class for styling the Hero section */}
 
-      <div className="videotag-container mt-5 z-50">  {/* Added container to help position video */}
-        <video autoPlay muted loop src={vdo} className="MYVDO w-3/4 mx-auto rounded-md"></video>
+      {/* <div className="videotag-container mt-5 z-50">  Added container to help position video */}
+        {/* <video autoPlay muted loop src={vdo} className="MYVDO w-3/4 mx-auto rounded-md"></video> */}
+      {/* </div> */}
+      <div className="maintext flex items-center justify-center h-lvh gap-5  flex-col">
+           <h1 className='iitb text-4xl tracking-normal font-medium	uppercase	'>
+      IIT Bombay’s pioneering student-led team in</h1>
+      <h1 className='iitb text-4xl tracking-normal	font-medium uppercase	'>
+      sustainable chemical engineering,
+            </h1>
+      <h1 className='iitb text-4xl tracking-normal	font-medium uppercase	'>aims to tackles challenges from carbon capture to fuel cells
+      </h1>
+      <h1 className='iitb text-4xl tracking-normal	font-medium uppercase	'>driving innovation for a greener future
+      </h1>
+      
       </div>
-
+ 
       <div className="content-container">  {/* Added content container for text */}
         <h1 className="ABOUT ml-8 text-5xl mt-11 font-semibold">ABOUT US</h1>
         <p className="ml-8 text-xl mt-8 w-5/6 text-gray-500">

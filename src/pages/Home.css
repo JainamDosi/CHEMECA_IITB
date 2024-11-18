@@ -1,3 +1,28 @@
 .main{
 
 }
+
+.MYVDO {
+    position: relative;
+    box-shadow: 0 0 50px 1px rgba(0, 255, 150, 0.2); /* Adjust the color and intensity of the glow */
+    border-radius: 15px; /* Matches your existing rounded-md class */
+    transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  @font-face {
+    font-family: 'My';
+    src: url('Bison-Bold.ttf') format('truetype'); /* Path relative to public folder */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+
+
+.maintext{
+    background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(39, 39, 39) 100%),
+    url('src/assets/BG4.png');
+    background-size: cover;
+    background-position: center;
+}

@@ -8,12 +8,15 @@
 
 .warp {
     width: 100%;
-    background-color: rgba(78, 78, 78, 0.1); /* Semi-transparent white */
-    backdrop-filter: blur(80px); /* Adjust blur level as needed */
+    background-image: 
+    linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(31, 31, 31) 100%);
+   /* Semi-transparent white */
+    /* backdrop-filter: blur(80px); Adjust blur level as needed */
     -webkit-backdrop-filter: blur(50px); /* Safari support */
     border-radius: 10px; /* Optional: gives it a rounded appearance */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow effect */
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); Optional: adds a shadow effect */
     position: fixed;
+    
     align-items: center;
     align-self: center;
     display: flex;
