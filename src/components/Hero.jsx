@@ -14,7 +14,7 @@ export const Hero = () => {
         tl.to(".tobe, .line", {
           y: -15,  // Move to normal position from off-screen below
           duration: 2,
-           // Delay between each line
+           stagger:0.5,
           opacity: 1
         },);
     

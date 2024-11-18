@@ -1,6 +1,6 @@
 .slider {
     width: 100%;
-    height: var(--height);
+    height: 200px;
     overflow: hidden;
     mask-image: linear-gradient(
       to right,
@@ -14,13 +14,13 @@
     display: flex;
     gap: 10px;
     width: 100%;
-    gap: 10px;
+    gap: 1px;
     min-width: calc(var(--width) * var(--quantity));
     position: relative;
   }
   
   .slider .list .item {
-    width: calc(var(--width) *2.5);  /* Increase the width of the item container */
+    width: calc(var(--width) *2.8);  /* Increase the width of the item container */
     height:calc( var(--height)*1.1);
     position: absolute;
     left: 100%;

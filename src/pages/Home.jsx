@@ -41,7 +41,7 @@ const Home = () => {
       {/* Hero component takes full height of the viewport */}
       <Hero  />  {/* Added class for styling the Hero section */}
 
-      <div className="videotag-container mt-96 z-50">  {/* Added container to help position video */}
+      <div className="videotag-container mt-5 z-50">  {/* Added container to help position video */}
         <video autoPlay muted loop src={vdo} className="MYVDO w-3/4 mx-auto rounded-md"></video>
       </div>
 
@@ -61,7 +61,7 @@ const Home = () => {
       
       <div className="carousel-container mt-20">
         <Carousel images={images} width={100} quantity={5} className="mt-5" />
-        <Carousel images={images} width={100} quantity={5} reverse className="mt-8" />
+        <Carousel images={images} width={100} quantity={5} reverse className="mt-5" />
       </div>
     </div>
   );

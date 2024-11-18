@@ -1,7 +1,7 @@
 import React from 'react';
 import './Carousel.css'; // Assuming the CSS is saved in Carousel.css
 
-const Carousel = ({ images, reverse = false, width = 500, height =200, quantity = 10,className='' }) => {
+const Carousel = ({ images, reverse = false, width = 500, height =150, quantity = 10,className='' }) => {
   return (
     <div
     className={`slider ${className}`}
