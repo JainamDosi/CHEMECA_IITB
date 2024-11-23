@@ -1,5 +1,5 @@
 import React from 'react';
-import ime from '../assets/profiles/dangi.jpg';
+
 import { FiMail } from "react-icons/fi";
 import logo from '../assets/logo.png'
 

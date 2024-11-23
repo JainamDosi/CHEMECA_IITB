@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react';
 import './Hero.css'
+import BG from '../assets/BG.png'
 
 
 export const Hero = () => {

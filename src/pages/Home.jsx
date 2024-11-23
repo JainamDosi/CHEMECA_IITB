@@ -12,6 +12,14 @@ import img2 from '../assets/gallery/img2.jpg';
 import img3 from '../assets/gallery/img3.jpg';
 import img4 from '../assets/gallery/img4.png';
 import img5 from '../assets/gallery/img5.jpg';
+import BG4 from '../assets/BG4.png'
+import I1 from '../assets/sub/Research.jpg'; 
+import I2 from '../assets/sub/Process.jpg'; 
+import I3 from '../assets/sub/Controls.jpg'; 
+import I4 from '../assets/sub/Business.jpg'; 
+import HoverCard from '../components/HoverCard';
+import Tilt from 'react-parallax-tilt';
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -31,7 +39,7 @@ const Home = () => {
         start: 'top 80%', // Start the animation when maintext top reaches 80% of viewport height
         end: 'top 50%',
         scrub: 2,
-        markers:true,
+        
         stagger:2
       },
     });
@@ -59,7 +67,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="content-container">
+      <div className="content-container flex flex-col justify-center align-middle self-center">
         <h1 className="ABOUT ml-8 text-5xl mt-11 font-semibold">ABOUT US</h1>
         <p className="ml-8 text-xl mt-8 w-5/6 text-gray-500">
           Team ChemEca is a dynamic, interdisciplinary student team that brings
@@ -75,8 +83,17 @@ const Home = () => {
         </p>
       </div>
 
-      <div className="bg-lime-300 h-1 w-full mt-3 rounded-md"></div>
-
+      
+      <div className='flex flex-col mt-14'>
+        <div className='flex align-middle justify-center text-6xl font-medium uppercase'> Subsytems </div>
+        <div className='flex flex-row justify-evenly'>
+      <Tilt> <HoverCard imageSrc={I1} overlayText="Research" overlayText2={`Adsorbent Modification \n Utilization \n Data Analysis`}/> </Tilt>
+      <Tilt> <HoverCard imageSrc={I2} overlayText="Process" overlayText2={`Modeling \n Fabrication \n Safety`}/> </Tilt>
+      <Tilt> <HoverCard imageSrc={I3} overlayText="Controls" overlayText2={`CO₂ Monitoring Device \n Control System Loops \n Internet of Things (IoT)`}/> </Tilt>
+      <Tilt> <HoverCard imageSrc={I4} overlayText="Business" overlayText2={`Tech to Business \n Techno-Commercial Analysis \n Industrial Collaboration`}/></Tilt>
+      </div>
+      </div>
+      
       <div className="carousel-container mt-20">
         <Carousel images={images} width={100} quantity={5} className="mt-5" />
         <Carousel images={images} width={100} quantity={5} reverse className="mt-5" />

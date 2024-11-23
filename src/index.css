@@ -7,8 +7,8 @@
 
 body {
   background: rgb(39, 39, 39);
-  w:100vw;
-  h:100vh;
+  width:100vw;
+  height:100vh;
   color: rgb(254, 250, 244);
   
   font-family: "poppins";

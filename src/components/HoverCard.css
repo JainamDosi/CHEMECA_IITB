@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    opacity: 0; /* Initially hide the overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overlay-text {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 10px;
+    white-space: pre-wrap;
+  }
+  
+  .IM:hover .overlay {
+    opacity: 1; /* Show the overlay when the image is hovered */
+  }
+  
+    
+ /* HoverCard.css */
+.up {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  transform: translateX(-50%);
+  color: white; /* Adjust text color if needed */
+  font-size: 1rem; /* Adjust font size */
+  text-align: center;
+  z-index: 2; 
+}
+
+ 
