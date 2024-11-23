@@ -2,29 +2,65 @@ import React from 'react';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import bgrn from '../assets/bgrnd.jpg';
-import img1 from '../assets/profiles/img1.jpg'
+import img1 from '../assets/profiles/img1.jpeg';
+import img2 from '../assets/profiles/img2.jpeg';
+import img3 from '../assets/profiles/img3.jpeg';
+import img4 from '../assets/profiles/img4.jpg';
+import img5 from '../assets/profiles/img5.jpeg';
+import img6 from '../assets/profiles/img6.jpeg';
+// import img7 from '../assets/profiles/img7.jpeg';
+import img8 from '../assets/profiles/img8.jpg';
+import img9 from '../assets/profiles/img9.jpg';
+import img10 from '../assets/profiles/img10.jpeg';
+import img11 from '../assets/profiles/img11.jpg';
+// import img12 from '../assets/profiles/img12.jpeg';
+// import img13 from '../assets/profiles/img13.jpeg';
+// import img14 from '../assets/profiles/img14.jpeg';
+// import img15 from '../assets/profiles/img15.jpeg';
+// import img16 from '../assets/profiles/img16.jpeg';
+import img17 from '../assets/profiles/img17.jpeg';
+import img18 from '../assets/profiles/img18.jpg';
+import img19 from '../assets/profiles/img19.png';
+// import img20 from '../assets/profiles/img20.jpeg';
+// import img21 from '../assets/profiles/img21.jpeg';
+// import img22 from '../assets/profiles/img22.jpeg';
+// import img23 from '../assets/profiles/img23.jpeg';
+// import img24 from '../assets/profiles/img24.jpeg';
+// import img25 from '../assets/profiles/img25.jpeg';
+// import img26 from '../assets/profiles/img26.jpeg';
+// import img27 from '../assets/profiles/img27.jpeg';
+// import img28 from '../assets/profiles/img28.jpeg';
+// import img29 from '../assets/profiles/img29.jpeg';
+// import img30 from '../assets/profiles/img30.jpeg';
+// import img31 from '../assets/profiles/img31.jpeg';
+// import img32 from '../assets/profiles/img32.jpeg';
+// import img33 from '../assets/profiles/img33.jpeg';
+// import img34 from '../assets/profiles/img34.jpeg';
+// import img35 from '../assets/profiles/img35.jpeg';
+// import img36 from '../assets/profiles/img36.jpeg';
+
 const Team = () => {
   const teamMembers = [
     // Faculty Advisor
   
     { "name": "Prof. Bharat Kumar Suthar", "email": "bharat.k.suthar@iitb.ac.in", "position": "Faculty Advisor", "division": "Faculty Advisor", "image": img1 },
     // Faculty Mentor
-    { "name": "Prof. Sanjay Mahajani", "email": "sanjaym@che.iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor" },
-    { "name": "Prof. Arnab Dutta", "email": "arnab.dutta@iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor" },
-    { "name": "Prof. Yogendra Shastri", "email": "yshastri@iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor" },
-    { "name": "Prof. Mahesh", "email": "mahesh@che.iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor" },
-    { "name": "Prof. Sonali", "email": "sonali.das@iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor" },
+    { "name": "Prof. Sanjay Mahajani", "email": "sanjaym@che.iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor", "image": img2 },
+    { "name": "Prof. Arnab Dutta", "email": "arnab.dutta@iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor", "image": img3 },
+    { "name": "Prof. Yogendra Shastri", "email": "yshastri@iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor", "image": img4 },
+    { "name": "Prof. Mahesh", "email": "mahesh@che.iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor", "image": img5 },
+    { "name": "Prof. Sonali", "email": "sonali.das@iitb.ac.in", "position": "Faculty Mentor", "division": "Faculty Mentor", "image": img6 },
   
     // PhD Advisor
     { "name": "Vipul Amrutkar", "email": "23d0139@iitb.ac.in", "position": "PhD Advisor", "division": "PhD Advisor" },
   
     // Team Lead
-    { "name": "Bhavana", "email": "210020078@iitb.ac.in", "position": "Team Lead", "division": "Team Lead" },
-    { "name": "Yogesh Dangi", "email": "yogesh.dangi@iitb.ac.in", "position": "Team Lead", "division": "Team Lead" },
+    { "name": "Bhavana", "email": "210020078@iitb.ac.in", "position": "Team Lead", "division": "Team Lead", "image": img8 },
+    { "name": "Yogesh Dangi", "email": "yogesh.dangi@iitb.ac.in", "position": "Team Lead", "division": "Team Lead", "image": img9 },
   
     // Research Subsystem
-    { "name": "Saransh Vottery", "email": "22B0348@iitb.ac.in", "position": "Research Lead", "division": "Research Subsystem" },
-    { "name": "Arush Gaur", "email": "210020022@iitb.ac.in", "position": "Senior Advisor", "division": "Research Subsystem" },
+    { "name": "Saransh Vottery", "email": "22B0348@iitb.ac.in", "position": "Research Lead", "division": "Research Subsystem", "image": img10 },
+    { "name": "Arush Gaur", "email": "210020022@iitb.ac.in", "position": "Senior Advisor", "division": "Research Subsystem", "image": img11 },
     { "name": "Pranav P. Kawade", "email": "23B0372@iitb.ac.in", "position": "Research Associate", "division": "Research Subsystem" },
     { "name": "Sai Tambaku", "email": "23B0351@iitb.ac.in", "position": "Research Associate", "division": "Research Subsystem" },
     { "name": "Shivam Gupta", "email": "23b0309@iitb.ac.in", "position": "Research Associate", "division": "Research Subsystem" },
@@ -32,9 +68,9 @@ const Team = () => {
     { "name": "Eshika Mishra", "email": "23B0371@iitb.ac.in", "position": "Research Associate", "division": "Research Subsystem" },
     
     // Process and Manufacturing Subsystem
-    { "name": "Gayatri Moghe", "email": "22b2451@iitb.ac.in", "position": "Process and Manufacturing Lead", "division": "Process and Manufacturing Subsystem" },
-    { "name": "Shruti", "email": "210020132@iitb.ac.in", "position": "Senior Advisor", "division": "Process and Manufacturing Subsystem" },
-    { "name": "Manas Agarwal", "email": "210020074@iitb.ac.in", "position": "Senior Advisor", "division": "Process and Manufacturing Subsystem" },
+    { "name": "Gayatri Moghe", "email": "22b2451@iitb.ac.in", "position": "Process and Manufacturing Lead", "division": "Process and Manufacturing Subsystem", "image": img17 },
+    { "name": "Shruti", "email": "210020132@iitb.ac.in", "position": "Senior Advisor", "division": "Process and Manufacturing Subsystem", "image": img18 },
+    { "name": "Manas Agarwal", "email": "210020074@iitb.ac.in", "position": "Senior Advisor", "division": "Process and Manufacturing Subsystem", "image": img19 },
     { "name": "Mahesh Naik", "email": "23b0350@iitb.ac.in", "position": "Process and Manufacturing Engineer", "division": "Process and Manufacturing Subsystem" },
     { "name": "OJAS PATHAK", "email": "23b0428@iitb.ac.in", "position": "Process and Manufacturing Engineer", "division": "Process and Manufacturing Subsystem" },
     { "name": "A Naveen", "email": "naveeen1125@gmail.com", "position": "Process and Manufacturing Engineer", "division": "Process and Manufacturing Subsystem" },
