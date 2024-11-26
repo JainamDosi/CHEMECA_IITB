@@ -1,9 +1,33 @@
 .main4{
-    background-image: url('../assets/Res.jpg');
+    background-image: 
+    linear-gradient(to bottom, rgba(68, 67, 67, 0) 0%, rgba(39, 39, 39) 100%),
+    url('../assets/Res.jpg');
+    
     width: 100vw;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+
+}
+
+.heading{
+    text-align: center;
+
+}
+
+.images{
+    transform: scale(0.95);
+}
+
+.images2{
+    margin-top: -110px;
+    transform: scale(0.5);
+    
 }

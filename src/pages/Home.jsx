@@ -19,10 +19,14 @@ import I3 from '../assets/sub/Controls.jpg';
 import I4 from '../assets/sub/Business.jpg'; 
 import HoverCard from '../components/HoverCard';
 import Tilt from 'react-parallax-tilt';
-
+import Footer from '../components/Footer';
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const images = [img1, img2, img3, img4, img5];
 
   useEffect(() => {
@@ -94,11 +98,15 @@ const Home = () => {
       </div>
       </div>
       
-      <div className="carousel-container mt-20">
+      <div className='w-full h-1 bg-amber-200 mt-24'></div>
+
+
+      <div className="carousel-container mt-28">
         <Carousel images={images} width={100} quantity={5} className="mt-5" />
         <Carousel images={images} width={100} quantity={5} reverse className="mt-5" />
       </div>
       
+      <Footer/>
     </div>
   );
 };

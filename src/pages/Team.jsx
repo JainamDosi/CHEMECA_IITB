@@ -38,8 +38,13 @@ import img19 from '../assets/profiles/img19.png';
 // import img34 from '../assets/profiles/img34.jpeg';
 // import img35 from '../assets/profiles/img35.jpeg';
 // import img36 from '../assets/profiles/img36.jpeg';
-
+import Footer from '../components/Footer';
+import { useEffect } from "react";
 const Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const teamMembers = [
     // Faculty Advisor
   
@@ -124,6 +129,7 @@ const Team = () => {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };

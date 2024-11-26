@@ -5,6 +5,7 @@ import OCC from '../assets/Occ.png';
 import CC from '../assets/CC.png'
 import IC from '../assets/IC.png'
 
+import Footer from '../components/Footer';
 const Comp = () => {
   const aboutText = `
     Carbon removal is far from where it needs to be in the near future to avert 
@@ -57,6 +58,7 @@ Recognising new and emerging talent is hugely important. The IChemE Young
         />
         
       </div>
+      <Footer/>
     </div>
   );
 };
