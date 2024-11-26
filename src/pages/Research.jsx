@@ -6,7 +6,9 @@ const Research = () => {
   return (
     <div className='main4'>
         <Header/>
-        
+
+        <h1>Research Subsystem</h1>
+
     </div>
   )
 }
