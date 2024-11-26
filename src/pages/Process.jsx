@@ -1,11 +1,12 @@
 import React from 'react'
 import Header from '../components/Header'
 import Pr from '../assets/Proc.jpg'
+import './Process.css'
 const Process = () => {
   return (
-    <div>
+    <div className='main6'>
         <Header/>
-        <img src={Pr} alt="" className='w-full h-full' />
+      
     </div>
   )
 }

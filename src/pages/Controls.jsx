@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
 import Cont from '../assets/Control.jpg'
+import './Controls.css'
+
 const Controls = () => {
   return (
-    <div>
+    <div className='main5'>
         <Header/>
-        <img src={Cont} alt="" className='w-screen h-screen bg-cover align-middle'/>
+        
     </div>
   )
 }
