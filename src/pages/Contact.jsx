@@ -13,10 +13,7 @@ const Contact = () => {
         <h1>Get in Touch with Us</h1>
         <h2>CONTACT US</h2>
         <p>
-          The successes of the Mars Rover crew during the previous few years
-          have been extensively covered in the media. Every year, the crew
-          spends months planning and creating a brand-new rover, pushing
-          technological and scientific frontiers with each iteration.
+          
         </p>
       </div>
       <div className="contact-info">
@@ -53,7 +50,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    
+
     <Footer/>
     </>
   )
