@@ -4,7 +4,7 @@
   "name": "chemeca",
   
 
-  "private": true,
+  
   
 
   "version": "0.0.0",
@@ -17,9 +17,6 @@
   
 
   "scripts": {
-  
-
-    
 
   "dev": "vite",
   
@@ -33,8 +30,6 @@
 
   "lint": "eslint .",
   
-
-    
 
   "preview": "vite preview",
   "predeploy": "npm run build",
