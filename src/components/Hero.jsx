@@ -14,7 +14,7 @@ export const Hero = () => {
         // Animate the text elements
         tl.to(".tobe, .line", {
           y: -15,  // Move to normal position from off-screen below
-          duration: 2,
+          duration: 1,
            stagger:0.5,
           opacity: 1
         },);

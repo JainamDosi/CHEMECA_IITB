@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import CompCard from '../components/CompCard';
 import OCC from '../assets/Occ.png';
@@ -7,6 +7,9 @@ import IC from '../assets/IC.png'
 
 import Footer from '../components/Footer';
 const Comp = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const aboutText = `
     Carbon removal is far from where it needs to be in the near future to avert 
     the worst effects of climate change. The OpenAir Carbon Removal Challenge 

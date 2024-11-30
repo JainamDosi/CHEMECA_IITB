@@ -6,19 +6,25 @@ import models from '../assets/model.png'
 import fab from '../assets/fab.png'
 import safety from '../assets/safety.png'
 import gsap from 'gsap'
-
+import { useGSAP } from '@gsap/react';
 import Footer from '../components/Footer';
 const Process = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  
-    gsap.from('.headings', {
-      opacity: 0,
-      y: 50,
-      duration: 2,
-      ease: 'power2.out',
-    });
   }, []);
+
+  useGSAP(() => {
+    const tl2 = gsap.timeline(); // Create a timeline for syncing animations
+
+    // Animate the text elements
+    tl2.from(".headings", {
+      y:50,// Move to normal position from off-screen below
+      duration: 1,
+      ease: 'power2.out',
+      opacity: 0
+    },);
+
+  });
   
   return (
 

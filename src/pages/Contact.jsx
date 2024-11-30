@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import CustomCursor from '../components/CustomCursor'
 import Header from '../components/Header'
 import './Contact.css'
 import Footer from '../components/Footer';
 
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <Header/>

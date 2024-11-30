@@ -21,7 +21,7 @@ import HoverCard from '../components/HoverCard';
 import Tilt from 'react-parallax-tilt';
 import Footer from '../components/Footer';
 gsap.registerPlugin(ScrollTrigger);
-
+import { useGSAP } from '@gsap/react';
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,13 +29,16 @@ const Home = () => {
 
   const images = [img1, img2, img3, img4, img5];
 
-  useEffect(() => {
-    
-    // Animation for h1 tags in the maintext div
-    gsap.from('.maintext h1', {
+
+
+  useGSAP(() => {
+    const tl3 = gsap.timeline(); // Create a timeline for syncing animations
+
+    // Animate the text elements
+    tl3.from(".maintext h1", {
       y: 120,
       opacity: 0,
-      duration: 2.5,
+      duration:1,
       stagger: 0.3,
       ease: 'power4.out',
       scrollTrigger: {
@@ -46,8 +49,10 @@ const Home = () => {
         
         stagger:2
       },
-    });
-  }, []);
+  });
+
+  });
+
 
   return (
     <div className="main">

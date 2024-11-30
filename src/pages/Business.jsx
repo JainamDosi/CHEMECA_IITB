@@ -6,15 +6,24 @@ import ttb from '../assets/ttb.png'
 import tca from '../assets/tca.png'
 import colab from '../assets/colab.png'
 import Footer from '../components/Footer';
+import { useGSAP } from '@gsap/react';
 const Business = () => {
   useEffect(() => {
-    gsap.from('.headings', {
-      opacity: 0,
-      y: 50,
-      duration: 2,
-      ease: 'power2.out',
-    });
+    window.scrollTo(0, 0);
   }, []);
+  
+  useGSAP(() => {
+    const tl2 = gsap.timeline(); // Create a timeline for syncing animations
+
+    // Animate the text elements
+    tl2.from(".headings", {
+      y:50,// Move to normal position from off-screen below
+      duration: 1,
+      ease: 'power2.out',
+      opacity: 0
+    },);
+
+  });
 
   return (
     <>

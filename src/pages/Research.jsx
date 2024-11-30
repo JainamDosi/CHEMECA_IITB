@@ -1,24 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import Header from '../components/Header'
 import './Research.css'
 import adb from '../assets/adb.jpg'
 import uti from '../assets/uti.jpg'
 import data from '../assets/data.jpg'
-import { useEffect } from "react";
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react';
 
 import Footer from '../components/Footer';
 const Research = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  
-    gsap.from('.headings', {
-      opacity: 0,
-      y: 50,
-      duration: 2,
-      ease: 'power2.out',
-    });
   }, []);
+
+  
+
+  useGSAP(() => {
+    const tl2 = gsap.timeline(); // Create a timeline for syncing animations
+
+    // Animate the text elements
+    tl2.from(".headings", {
+      y:50,// Move to normal position from off-screen below
+      duration: 1,
+      ease: 'power2.out',
+      opacity: 0
+    },);
+
+  });
+
   
 
 
